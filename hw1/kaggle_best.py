@@ -96,8 +96,6 @@ while best_rmsErr > 5 and t < 500000:
 	dw = -2 * np.dot(x_train_t, diff)
 	db = -2 * np.sum(diff)
 
-	loss = np.sum(diff ** 2)
-	print("iters %s | LOSS: %.7f" % (t,loss) )
 
 	# Regulation 
 	dw += Lambda*2*w
@@ -120,9 +118,7 @@ if rmsErr_valid < best_rmsErr:
 
 
 # debug 
-print ('Best RMSE: %.7lf' % best_rmsErr)
-print ('Best B: %.7lf' % best_b)
-print ("Best W:\n%s" % best_w)
+
 
 
 

@@ -105,8 +105,6 @@ for idx in range(fold):
 		dw = -2 * np.dot(x_train_t, diff)
 		db = -2 * np.sum(diff)
 
-		loss = np.sum(diff ** 2)
-		print("iters %s | LOSS: %.7f" % (i,loss) )
 
 		# Regulation 
 		dw += Lambda*2*w
@@ -148,10 +146,7 @@ for idx in range(fold):
 		best_b = b
 
 # debug checking
-print ('RMSE: %.7lf' % (rmsErr))
-print ('Best RMSE: %.7lf' % best_rmsErr)
-print ('Best B: %.7lf' % best_b)
-print ("Best W:\n%s" % best_w)
+
 
 
 
