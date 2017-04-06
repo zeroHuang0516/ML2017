@@ -37,7 +37,7 @@ mean = np.sum(train_x, axis=0)/len(train_xdata)
 std = (np.sum((train_x - mean)**2, axis=0)/len(train_xdata))**0.5
 train_x = (train_x-mean)/std
 
-print("Training...")
+print("Train")
 
 # train
 
@@ -86,7 +86,7 @@ while(True):
     b += t_b
     # debug
     if (t % 100 == 0):
-        print("#iter: ", t, "times__Cross Entropy:", error_function(w, b, train_y, train_x) )
+        # print("#iter: ", t, "| Cross Entropy:", error_function(w, b, train_y, train_x) )
     if ( t > iterations):
         print ("Training is done.")
         break
