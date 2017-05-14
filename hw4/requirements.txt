@@ -1,0 +1,11 @@
+numpy
+sklearn.svm
+gen
+word2vec
+nltk
+cv2
+os
+PIL
+matplotlib.cm
+matplotlib.pyplot
+math
