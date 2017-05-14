@@ -1,6 +1,5 @@
 numpy
 sklearn.svm
-gen
 word2vec
 nltk
 cv2
